@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+  @apply bg-neutral;
+}
+
+body {
+  font-family: 'Open Sans', 'Poppins';
+  font-size: 16px; /* This is the default font size for the Tailwind config */
+  /* @apply text-neutral; */
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  /* background-image: url('../assets/images/city-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+/* Navbar */
+.active-link {
+  color: #FFA500; /* This is the primary color from your Tailwind config */
+}
+
+.nav-link {
+  color: #FFA500;
+}
+
+.main{
+  height: calc(100vh - 4rem);;
+}
