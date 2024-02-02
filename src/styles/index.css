@@ -33,3 +33,26 @@ body {
 .main{
   height: calc(100vh - 4rem);;
 }
+
+.hero-text::before, .hero-text::after{
+  content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    align-content: center;                         
+    width: 100%;
+    margin-top: 0.5rem;
+    background: linear-gradient(to bottom, theme('colors.white'), theme('colors.primary'));
+    box-shadow: 0 1px 4px rgba(17, 45, 172, 0.3);
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* aligns the hexagons to the right */
+    align-items: center;
+
+    /* width: calc(200px + 17vw); */
+    height: auto; /* auto height means that the height will be calculated based on the width */
+    background-color: none;
+} 

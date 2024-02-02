@@ -1,5 +1,6 @@
 import Button from "./button";
 import NavItem from "./navItem";
+import Logo from "./logo";
 import {useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
@@ -8,11 +9,16 @@ export default function NavBar() {
 
 
   return (
-    <div className="flex justify-end items-center w-full h-16 bg-primary pr-4 sm:pr-8 md:pr-12 lg:pr-16">
-      <NavItem key={1} to="/" text="Home" />
-      <NavItem key={2} to="/about" text="About" />
-      <NavItem key={3} to="/listings" text="Listings" />
-      <Button variant="outlined" text="Contact" onClick={() => { }} />
+    <div className="flex justify-between items-center h-16 bg-primary ">
+      <div className="flex justify-start items-center pl-8 sm:pl-12 md:pl-16 lg:pl-24">
+        <Logo />
+      </div>
+      <div className="flex justify-end items-center pr-8 sm:pr-12 md:pr-16 lg:pr-24">
+        <NavItem key={1} to="/" text="Home" />
+        <NavItem key={2} to="/about" text="About" />
+        <NavItem key={3} to="/listings" text="Listings" />
+        <Button variant="outlined" text="Contact" onClick={() => { }} />
+      </div>
     </div>
   );
 }

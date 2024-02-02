@@ -8,6 +8,7 @@ module.exports = {
         primary: '#FFA500', // orange (for buttons)
         secondary: '#001F3F', // navy (contrast for buttons and text)
         tertiary: '#FF6F61', // coral
+        tertiary2: '#00bb00', // green
         neutral: '#F5F5F5',   // white smoke (for background)
         neutral2: '#D3D3D3',  // light gray (for background)
         black: '#000000',     // black (for text)
